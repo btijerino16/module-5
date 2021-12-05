@@ -12,3 +12,8 @@ $("#currentDay").text(moment().format('dddd, MMMM Do YYYY, h:mm a'));
 
 // click alerts and functionality 
 
+$(".saveBtn").on("click", function(){
+var task 
+
+
+}
