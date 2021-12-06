@@ -12,8 +12,12 @@ $("#currentDay").text(moment().format('dddd, MMMM Do YYYY, h:mm a'));
 
 // click alerts and functionality 
 
-$(".saveBtn").on("click", function(){
-var task 
+$(".saveBtn").click(function () {
+    event.preventDefault();
+    var formValue = $(this).siblings(".form-control").val();
+    console.log("BETTER WORK");
+    var listItem = $(this).parent().data("hour");
 
+    localStorage.setItem(listItem, formValue);
+});
 
-}
